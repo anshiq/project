@@ -23,6 +23,8 @@ const start = () => {
           console.log("Server Listning on :" + PORT);
         })
 
+    }).catch(e=>{
+      throw new Error(e);
     })
 };
 start()
